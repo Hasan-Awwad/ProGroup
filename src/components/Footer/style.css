@@ -1,0 +1,267 @@
+@font-face {
+  font-family: 'Euclid Circular A';
+  src: url('../../../public/assets/fonts/Euclid\ Circular\ A\ Bold.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(#0d0d0d, #212121);
+  font-family: "Euclid Circular A", sans-serif;
+  color: #d6dfed;
+  overflow-x: hidden; /* Disable horizontal overflow */
+}
+
+/* html,
+body {
+  height: 100%;
+} */
+
+.footer_background {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 370px; /* Set the height to match the footer height */
+}
+
+#footerSection {
+  padding: 5%; /* Add padding to the footer section */
+  /* background-color: #333;  */
+}
+
+
+#footerSection ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.socials {
+  gap: 20px;
+}
+
+.socials a {
+  font-size: 24px;
+  color: white;
+  text-decoration: auto;
+}
+
+.links {
+  gap: 10px;
+  flex-direction: column;
+}
+
+.links a {
+  color: white;
+  text-decoration: auto;
+}
+
+@keyframes waves {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* .socials a {
+  animation: waves 1.5s infinite;
+} */
+
+.socials .fa-facebook {
+  animation: waves 1.4s infinite;
+}
+
+.socials .fa-x-twitter {
+  animation: waves 1.6s infinite;
+}
+
+.socials .fa-linkedin {
+  animation: waves 1.8s infinite;
+}
+
+.socials .fa-instagram {
+  animation: waves 2s infinite;
+}
+
+.socials a:hover {
+  animation: none;
+  color: black;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.links a {
+  text-decoration: none;
+  position: relative;
+}
+
+.links a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.links a:hover::after {
+  background-color: black;
+}
+
+
+.legal {
+  font-size: 12px;
+  margin: 0;
+}
+
+.footer_background svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(6) scaleX(2.25);
+  transform-origin: bottom;
+  box-sizing: border-box;
+  display: block;
+  pointer-events: none;
+}
+
+footer {
+  position: relative; /* Change position to fixed */
+  bottom: 0; /* Position the footer at the bottom */
+  left: 0;
+  width: 100%; /* Ensure footer spans the entire width */
+  z-index: 2; /* Increase z-index to ensure it's above the background */
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 30px;
+  padding-bottom: 60px;
+  padding-left: 60px;
+  width: 100%;
+}
+
+section {
+  align-items: center;
+  padding-left: 0;
+  gap: 20px;
+}
+@media (width > 420px) {
+  .links {
+    gap: 20px;
+    flex-direction: row;
+  }
+}
+
+@media (width < 420px) {
+  .footer_background{
+    height: 330px;
+  }
+
+  .footer_background svg {
+    transform: scaleY(7) scaleX(2.25);
+  }
+
+  .socials {
+    gap: 30px;
+  }
+}
+
+/* .contact-main > div.col-lg-4 {
+  border-bottom: dotted 1px #999;
+} */
+
+.contact-container{
+  margin-top: 5%;
+  margin-bottom: -5%;
+}
+
+.contact-box {
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+.contact-icon{
+  float: left;
+  width: 60px;
+  display: inline-block;
+  padding: 0px 5px;
+}
+.contact-box .contact-icon {
+  height: 75px;
+  line-height: 75px;
+  width: 75px;
+  margin-right: 20px;
+  text-align: center;
+}
+.contact-icon img{
+  width: 100%;
+}
+
+.add-content{
+  padding-left: 70px;
+  text-align: left;
+}
+.add-content h5 {
+  font-size: 17px;
+  color: #ffffff;
+  padding: 0;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.add-content p {
+  font-size: 13px;
+  color: #999999;
+  font-weight: 300;
+  /* text-align: left; */
+}
+.add-content p a{
+  font-size: 14px;
+  color: #999999;
+  font-weight: 300;
+  word-wrap: break-word;
+}
+.add-content p a:hover{
+  color: black;
+}
+.footer-main{
+  padding-top: 90px;
+}
+
+.phone-box{
+  margin-left: 10%;
+}
+
+@media (width < 992px) {
+  .phone-box{
+    margin-left: 0%;
+  }
+}
+
+.content{
+  margin-bottom: 200px;
+}
