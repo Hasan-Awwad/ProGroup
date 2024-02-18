@@ -33,7 +33,7 @@ function App() {
             </div>
           </div>
         </div>
-        <img class="mylogo" src="/assets/Progroup-lb-logo-1x.png" />
+        <img class="mylogo" src="/assets/images/Progroup-lb-logo-1x.png" />
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
           <ul class="navbar-nav ml-auto">
