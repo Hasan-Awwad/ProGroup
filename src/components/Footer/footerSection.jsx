@@ -23,7 +23,7 @@ const FooterSection = () => {
 
       <FooterContact />
 
-      <p className="legal">© {currentDate.getFullYear()} All rights reserved</p>
+      <p className="legal">Progrouplb © {currentDate.getFullYear()} All rights reserved</p>
     </section>
   );
 };

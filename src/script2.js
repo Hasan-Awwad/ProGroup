@@ -59,15 +59,12 @@ script.onload = function () {
             var body = undefined;
             var menu = undefined;
             var menuItems = undefined;
-            var horiSelectorDiv = undefined;
-            
+
             var init = function init() {
                 body = document.querySelector('body');
                 menu = document.querySelector('.menu-icon');
-                horiSelectorDiv = document.querySelector('.hori-selector');
                 menuItems = document.querySelectorAll('.nav__list-item');
                 body.classList.add("light");
-                // horiSelectorDiv.classList.add("light");
                 applyListeners();
             };
 
@@ -96,6 +93,18 @@ script.onload = function () {
             } else {
                 $("body").addClass("light");
                 $("#switch").addClass("switched");
+            }
+        });
+
+        $(document).on('click', function (event) {
+            var menu = $('.menu-icon');
+            var menuItems = $('.nav__list-item');
+            var menuItems_a = $('.nav__list-item a');
+
+
+            // Check if the clicked element is not a menu item or inside the menu
+            if (!menuItems.is(event.target) && !menu.is(event.target) && !menuItems_a.is(event.target) && menu.has(event.target).length === 0) {
+                $("body").removeClass("nav-active");
             }
         });
 

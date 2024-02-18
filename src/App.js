@@ -37,96 +37,49 @@ function App() {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
           <ul class="navbar-nav ml-auto">
-            <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
-            <li class="nav-item active">
+            <div class="hori-selector-container">
+              <div class="hori-selector">
+                <div class="left"></div>
+                <div class="right"></div>
+              </div>
+            </div>
+            <li class="hover-target nav-item active">
               <a class="nav-link" href="javascript:void(0);"><i class="fas fa-tachometer-alt"></i>Home</a>
             </li>
-            <li class="nav-item">
+            <li class="hover-target nav-item">
               <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-book"></i>About</a>
             </li>
-            <li class="nav-item">
+            <li class="hover-target nav-item">
               <a class="nav-link" href="javascript:void(0);"><i class="far fa-clone"></i>Blog</a>
             </li>
-            <li class="nav-item">
+            <li class="hover-target nav-item">
               <a class="nav-link" href="javascript:void(0);"><i class="far fa-calendar-alt"></i>Contact</a>
             </li>
           </ul>
         </div>
       </nav>
       <div id="switch" class="hover-target switched" style={{
-          "margin-left":"50%"
-        }}>
-				<div id="circle"
-          ></div>
-			</div>
-      <div>
-        <p>TEST</p>
+        "margin-left": "50%"
+      }}>
+        <div id="circle"
+        ></div>
       </div>
-      <div>
-        <p>TEST</p>
+      <div class="content">
+        <h2>This is additional content</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula risus eget elit ultricies, sed ultricies arcu ultrices. Ut tincidunt fringilla magna. Nulla facilisi. Proin in ex nec ligula posuere ultrices. Proin fringilla vestibulum sem, eu consectetur turpis fringilla sit amet. Aenean convallis tincidunt diam. Duis nec tortor lacus. Quisque gravida est vitae ante malesuada, non eleifend urna condimentum.</p>
       </div>
-      <div>
-        <p>TEST</p>
+      <div class="content">
+        <h2>This is additional content</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula risus eget elit ultricies, sed ultricies arcu ultrices. Ut tincidunt fringilla magna. Nulla facilisi. Proin in ex nec ligula posuere ultrices. Proin fringilla vestibulum sem, eu consectetur turpis fringilla sit amet. Aenean convallis tincidunt diam. Duis nec tortor lacus. Quisque gravida est vitae ante malesuada, non eleifend urna condimentum.</p>
       </div>
-      <div>
-        <p>TEST</p>
+      <div class="content">
+        <h2>This is additional content</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula risus eget elit ultricies, sed ultricies arcu ultrices. Ut tincidunt fringilla magna. Nulla facilisi. Proin in ex nec ligula posuere ultrices. Proin fringilla vestibulum sem, eu consectetur turpis fringilla sit amet. Aenean convallis tincidunt diam. Duis nec tortor lacus. Quisque gravida est vitae ante malesuada, non eleifend urna condimentum.</p>
       </div>
-      <div>
-        <p>TEST</p>
+      <div class="content">
+        <h2>This is additional content</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula risus eget elit ultricies, sed ultricies arcu ultrices. Ut tincidunt fringilla magna. Nulla facilisi. Proin in ex nec ligula posuere ultrices. Proin fringilla vestibulum sem, eu consectetur turpis fringilla sit amet. Aenean convallis tincidunt diam. Duis nec tortor lacus. Quisque gravida est vitae ante malesuada, non eleifend urna condimentum.</p>
       </div>
-      <div>
-        <p>TEST</p>
-      </div>
-      <div>
-        <p>TEST</p>
-      </div>
-
-
-      <div>
-        <p>TEST</p>
-      </div>
-      <div>
-        <p>TEST</p>
-      </div>
-      <div>
-        <p>TEST</p>
-      </div>
-      <div>
-        <p>TEST</p>
-      </div>
-      <div>
-        <p>TEST</p>
-      </div>
-      <div>
-        <p>TEST</p>
-      </div>
-      <div>
-        <p>TEST</p>
-      </div>
-      <div>
-        <p>TEST</p>
-      </div>
-
-
-      <div>
-        <p>TEST</p>
-      </div>
-       <div class="content">
-          <h2>This is additional content</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula risus eget elit ultricies, sed ultricies arcu ultrices. Ut tincidunt fringilla magna. Nulla facilisi. Proin in ex nec ligula posuere ultrices. Proin fringilla vestibulum sem, eu consectetur turpis fringilla sit amet. Aenean convallis tincidunt diam. Duis nec tortor lacus. Quisque gravida est vitae ante malesuada, non eleifend urna condimentum.</p>    
-        </div>
-        <div class="content">
-          <h2>This is additional content</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula risus eget elit ultricies, sed ultricies arcu ultrices. Ut tincidunt fringilla magna. Nulla facilisi. Proin in ex nec ligula posuere ultrices. Proin fringilla vestibulum sem, eu consectetur turpis fringilla sit amet. Aenean convallis tincidunt diam. Duis nec tortor lacus. Quisque gravida est vitae ante malesuada, non eleifend urna condimentum.</p>    
-        </div>
-        <div class="content">
-          <h2>This is additional content</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula risus eget elit ultricies, sed ultricies arcu ultrices. Ut tincidunt fringilla magna. Nulla facilisi. Proin in ex nec ligula posuere ultrices. Proin fringilla vestibulum sem, eu consectetur turpis fringilla sit amet. Aenean convallis tincidunt diam. Duis nec tortor lacus. Quisque gravida est vitae ante malesuada, non eleifend urna condimentum.</p>    
-        </div>
-        <div class="content">
-          <h2>This is additional content</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula risus eget elit ultricies, sed ultricies arcu ultrices. Ut tincidunt fringilla magna. Nulla facilisi. Proin in ex nec ligula posuere ultrices. Proin fringilla vestibulum sem, eu consectetur turpis fringilla sit amet. Aenean convallis tincidunt diam. Duis nec tortor lacus. Quisque gravida est vitae ante malesuada, non eleifend urna condimentum.</p>    
-        </div>
       <Footer />
     </div>
   );

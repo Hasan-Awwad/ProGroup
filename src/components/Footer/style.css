@@ -2,14 +2,14 @@
   font-family: 'Euclid Circular A';
   src: url('../../../public/assets/fonts/Euclid\ Circular\ A\ Bold.ttf') format('truetype');
 }
-
+/* 
 body {
   margin: 0;
   background: linear-gradient(#0d0d0d, #212121);
   font-family: "Euclid Circular A", sans-serif;
   color: #d6dfed;
-  overflow-x: hidden; /* Disable horizontal overflow */
-}
+  overflow-x: hidden; Disable horizontal overflow
+} */
 
 /* html,
 body {
@@ -235,14 +235,14 @@ section {
 
 .add-content p {
   font-size: 13px;
-  color: #999999;
-  font-weight: 300;
+  color: #000000;
+  font-weight: bold;
   /* text-align: left; */
 }
 .add-content p a{
   font-size: 14px;
-  color: #999999;
-  font-weight: 300;
+  color: #000000;
+  font-weight: bold;
   word-wrap: break-word;
 }
 .add-content p a:hover{

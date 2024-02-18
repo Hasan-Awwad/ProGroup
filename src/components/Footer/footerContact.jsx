@@ -48,8 +48,9 @@ const FooterContact = () => {
                 <a
                   href="mailto:collab@codewithfaraz.com"
                   style={{ textDecoration: "none" }}
+                  class="hover-target"
                 >
-                  collab@codewithfaraz.com
+                  info@progrouplb.com
                 </a>
               </p>
             </div>
