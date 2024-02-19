@@ -15,10 +15,10 @@ const FooterSection = () => {
       </ul>
 
       <ul className="links">
-        <FooterLink label="Home" href="/" />
-        <FooterLink label="About" href="/about" />
-        <FooterLink label="Blog" href="/blog" />
-        <FooterLink label="Contact" href="/contact" />
+        <FooterLink label="Home" href="#" className="home_scroll"/>
+        <FooterLink label="About" href="#" />
+        <FooterLink label="Blog" href="#" />
+        <FooterLink label="Contact" href="#" className="footer_scroll" />
       </ul>
 
       <FooterContact />

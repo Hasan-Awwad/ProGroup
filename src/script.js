@@ -54,6 +54,24 @@ script.onload = function () {
 			var target = $('#navbarSupportedContent ul li a[href="' + path + '"]');
 			// Add active class to target link
 			target.parent().addClass('active');
+
+			$('.footer_scroll').on('click', function(e) {
+				e.preventDefault();
+				var targetOffset = $('#footer').offset().top;
+
+				$('html, body').animate({
+					scrollTop: targetOffset
+				}, 500);
+			});
+
+			$('.home_scroll').on('click', function(e) {
+				e.preventDefault();
+				var targetOffset = $('.navbar').offset().top;
+
+				$('html, body').animate({
+					scrollTop: targetOffset
+				}, 500);
+			});
 		});
 
 		// Add active class on another page linked

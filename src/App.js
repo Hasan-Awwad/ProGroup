@@ -24,11 +24,11 @@ function App() {
           <div class="nav">
             <div class="nav__content">
               <ul class="nav__list">
-                <li class="nav__list-item active-nav"><a href="#" class="hover-target">Home</a></li>
+                <li class="nav__list-item home_scroll active-nav"><a href="#" class="hover-target">Home</a></li>
                 <li class="nav__list-item"><a href="#" class="hover-target">Portfolio</a></li>
                 <li class="nav__list-item"><a href="#" class="hover-target">Studio</a></li>
                 <li class="nav__list-item"><a href="#" class="hover-target">News</a></li>
-                <li class="nav__list-item"><a href="#" class="hover-target">Contact</a></li>
+                <li class="nav__list-item footer_scroll"><a href="#" class="hover-target">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -43,7 +43,7 @@ function App() {
                 <div class="right"></div>
               </div>
             </div>
-            <li class="hover-target nav-item active">
+            <li class="hover-target nav-item home_scroll active">
               <a class="nav-link" href="javascript:void(0);"><i class="fas fa-tachometer-alt"></i>Home</a>
             </li>
             <li class="hover-target nav-item">
@@ -53,7 +53,7 @@ function App() {
               <a class="nav-link" href="javascript:void(0);"><i class="far fa-clone"></i>Blog</a>
             </li>
             <li class="hover-target nav-item">
-              <a class="nav-link" href="javascript:void(0);"><i class="far fa-calendar-alt"></i>Contact</a>
+              <a class="nav-link footer_scroll" href="javascript:void(0);"><i class="far fa-calendar-alt"></i>Contact</a>
             </li>
           </ul>
         </div>
