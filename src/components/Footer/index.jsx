@@ -4,7 +4,7 @@ import FooterBackground from "./footerBackround";
 import FooterSection from "./footerSection";
 const Footer = () => {
   return (
-    <footer>
+    <footer id="footer">
       <FooterBackground />
       <FooterSection />
     </footer>
