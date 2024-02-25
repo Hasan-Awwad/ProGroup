@@ -7,6 +7,7 @@ import './App.css';
 import './script.js'
 import './script2.js'
 import Footer from './components/Footer';
+import Network from './components/Network';
 
 function App() {
   return (
@@ -72,14 +73,9 @@ function App() {
         <h2>This is additional content</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula risus eget elit ultricies, sed ultricies arcu ultrices. Ut tincidunt fringilla magna. Nulla facilisi. Proin in ex nec ligula posuere ultrices. Proin fringilla vestibulum sem, eu consectetur turpis fringilla sit amet. Aenean convallis tincidunt diam. Duis nec tortor lacus. Quisque gravida est vitae ante malesuada, non eleifend urna condimentum.</p>
       </div>
-      <div class="content">
-        <h2>This is additional content</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula risus eget elit ultricies, sed ultricies arcu ultrices. Ut tincidunt fringilla magna. Nulla facilisi. Proin in ex nec ligula posuere ultrices. Proin fringilla vestibulum sem, eu consectetur turpis fringilla sit amet. Aenean convallis tincidunt diam. Duis nec tortor lacus. Quisque gravida est vitae ante malesuada, non eleifend urna condimentum.</p>
-      </div>
-      <div class="content">
-        <h2>This is additional content</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula risus eget elit ultricies, sed ultricies arcu ultrices. Ut tincidunt fringilla magna. Nulla facilisi. Proin in ex nec ligula posuere ultrices. Proin fringilla vestibulum sem, eu consectetur turpis fringilla sit amet. Aenean convallis tincidunt diam. Duis nec tortor lacus. Quisque gravida est vitae ante malesuada, non eleifend urna condimentum.</p>
-      </div>
+      {/* Begin: Network Section */}
+          <Network />
+      {/* End: Network Section */}
       <Footer />
     </div>
   );
