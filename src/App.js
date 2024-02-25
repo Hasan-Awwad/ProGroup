@@ -6,6 +6,7 @@ import '@fortawesome/fontawesome-free/css/all.css';
 import './App.css';
 import './script.js'
 import './script2.js'
+import './script4'
 import Footer from './components/Footer';
 
 function App() {
@@ -64,22 +65,14 @@ function App() {
         <div id="circle"
         ></div>
       </div>
-      <div class="content">
-        <h2>This is additional content</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula risus eget elit ultricies, sed ultricies arcu ultrices. Ut tincidunt fringilla magna. Nulla facilisi. Proin in ex nec ligula posuere ultrices. Proin fringilla vestibulum sem, eu consectetur turpis fringilla sit amet. Aenean convallis tincidunt diam. Duis nec tortor lacus. Quisque gravida est vitae ante malesuada, non eleifend urna condimentum.</p>
+      <div class="cont">
+        <div class="slider"></div>
+        <ul class="nav"></ul>
+        <div data-target='right' class="side-nav side-nav--right"></div>
+        <div data-target='left' class="side-nav side-nav--left"></div>
       </div>
-      <div class="content">
-        <h2>This is additional content</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula risus eget elit ultricies, sed ultricies arcu ultrices. Ut tincidunt fringilla magna. Nulla facilisi. Proin in ex nec ligula posuere ultrices. Proin fringilla vestibulum sem, eu consectetur turpis fringilla sit amet. Aenean convallis tincidunt diam. Duis nec tortor lacus. Quisque gravida est vitae ante malesuada, non eleifend urna condimentum.</p>
-      </div>
-      <div class="content">
-        <h2>This is additional content</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula risus eget elit ultricies, sed ultricies arcu ultrices. Ut tincidunt fringilla magna. Nulla facilisi. Proin in ex nec ligula posuere ultrices. Proin fringilla vestibulum sem, eu consectetur turpis fringilla sit amet. Aenean convallis tincidunt diam. Duis nec tortor lacus. Quisque gravida est vitae ante malesuada, non eleifend urna condimentum.</p>
-      </div>
-      <div class="content">
-        <h2>This is additional content</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula risus eget elit ultricies, sed ultricies arcu ultrices. Ut tincidunt fringilla magna. Nulla facilisi. Proin in ex nec ligula posuere ultrices. Proin fringilla vestibulum sem, eu consectetur turpis fringilla sit amet. Aenean convallis tincidunt diam. Duis nec tortor lacus. Quisque gravida est vitae ante malesuada, non eleifend urna condimentum.</p>
-      </div>
+
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
       <Footer />
     </div>
   );
