@@ -9,6 +9,7 @@ import './script2.js'
 import './script4'
 import Footer from './components/Footer';
 import Network from './components/Network';
+import Solutions from './components/Solutions';
 
 function App() {
   return (
@@ -72,6 +73,12 @@ function App() {
         <div data-target='right' class="side-nav side-nav--right"></div>
         <div data-target='left' class="side-nav side-nav--left"></div>
       </div>
+
+      {/* Begin: Soultions Section */}
+        <h1 class="title-solution">Solutions That We Provide It</h1>
+        <Solutions />
+      {/* End: Soultions Section */}
+      
       {/* Begin: Network Section */}
           <Network />
       {/* End: Network Section */}
