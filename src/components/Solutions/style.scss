@@ -276,17 +276,17 @@ body #user-button:focus-within .u-icons {
 //   transition: 0.25s;
 // }
 
-body.dark {
-  background: #232223;
-  color: white;
-}
+// body.dark {
+//   background: #232223;
+//   color: white;
+// }
 
-@media (prefers-color-scheme: dark) {
-  body:not(.light) {
-    background: #232223;
-    color: white;
-  }
-}
+// @media (prefers-color-scheme: dark) {
+//   body:not(.light) {
+//     background: #232223;
+//     color: white;
+//   }
+// }
 
 body .credit {
   position: absolute;
@@ -306,6 +306,7 @@ body .options {
   width: calc(100% - 100px);
   height: 400px;
   margin-left: 16%;
+  margin-bottom: 5%;
 }
 
 @media screen and (max-width: 718px) {

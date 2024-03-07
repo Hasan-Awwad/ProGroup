@@ -6,6 +6,7 @@ import '@fortawesome/fontawesome-free/css/all.css';
 import './App.css';
 import './script.js'
 import './script2.js'
+import './script3.js'
 import './script4'
 import Footer from './components/Footer';
 import Network from './components/Network';
@@ -74,15 +75,65 @@ function App() {
         <div data-target='left' class="side-nav side-nav--left"></div>
       </div>
 
+      <div class="blog-slider">
+        <div class="blog-slider__wrp swiper-wrapper">
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+
+              <img
+                src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp"
+                alt="" />
+            </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">26 December 2019</span>
+              <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+              <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate
+                repellendus magni illo ea animi? </div>
+              <a href="#" class="blog-slider__button">READ MORE</a>
+            </div>
+          </div>
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              <img
+                src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/jason-leung-798979-unsplash.webp"
+                alt="" />
+            </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">26 December 2019</span>
+              <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
+              <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate
+                repellendus magni illo ea animi?</div>
+              <a href="#" class="blog-slider__button">READ MORE</a>
+            </div>
+          </div>
+
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              <img
+                src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp"
+                alt="" />
+            </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">26 December 2019</span>
+              <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+              <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate
+                repellendus magni illo ea animi?</div>
+              <a href="#" class="blog-slider__button">READ MORE</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="blog-slider__pagination"></div>
+      </div>
+
       {/* Begin: Soultions Section */}
-        <h1 class="title-solution">Solutions That We Provide It</h1>
-        <Solutions />
+      <h1 class="title-solution">Solutions That We Provide It</h1>
+      <Solutions />
       {/* End: Soultions Section */}
-      
+
       {/* Begin: Network Section */}
-          <Network />
+      <Network />
       {/* End: Network Section */}
-      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
       <Footer />
     </div>
   );
