@@ -9,8 +9,9 @@ import './script2.js'
 import './script3.js'
 import './script4'
 import Footer from './components/Footer';
-import Network from './components/Network';
-import Solutions from './components/Solutions';
+import CablingWiring from './components/CablingWiring';
+import Main from './components/Main';
+import Solution from './components/Soultion/index.jsx';
 
 function App() {
   return (
@@ -50,12 +51,12 @@ function App() {
             <li class="hover-target nav-item home_scroll active">
               <a class="nav-link" href="javascript:void(0);"><i class="fas fa-tachometer-alt"></i>Home</a>
             </li>
-            <li class="hover-target nav-item">
+            {/* <li class="hover-target nav-item">
               <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-book"></i>About</a>
             </li>
             <li class="hover-target nav-item">
               <a class="nav-link" href="javascript:void(0);"><i class="far fa-clone"></i>Blog</a>
-            </li>
+            </li> */}
             <li class="hover-target nav-item">
               <a class="nav-link footer_scroll" href="javascript:void(0);"><i class="far fa-calendar-alt"></i>Contact</a>
             </li>
@@ -68,6 +69,11 @@ function App() {
         <div id="circle"
         ></div>
       </div>
+
+      {/* Begin: Main Section */}
+      <Main />
+      {/* End: Main Section */}
+
       <div class="cont">
         <div class="slider"></div>
         <ul class="nav"></ul>
@@ -126,14 +132,15 @@ function App() {
         <div class="blog-slider__pagination"></div>
       </div>
 
-      {/* Begin: Soultions Section */}
+      {/* Begin: Solution Section */}
       <h1 class="title-solution">Solutions That We Provide It</h1>
-      <Solutions />
-      {/* End: Soultions Section */}
-
-      {/* Begin: Network Section */}
-      <Network />
-      {/* End: Network Section */}
+      <Solution />
+      {/* End: Solution Section */}
+      
+      {/* Begin: CablingWiring Section */}
+      <h1 class="title-solution">Cabling and Wiring</h1>
+      <CablingWiring />
+      {/* End: CablingWiring Section */}
       <Footer />
     </div>
   );

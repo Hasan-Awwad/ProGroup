@@ -1,25 +1,25 @@
-import React, { useState } from "react";
-import NetworkSlide from "./networkSlide";
+import React from "react";
+import CablingWiringSlide from "./CablingWiringSlide";
 
 const NetworkSlider = () => {
   return (
     <div className="fnc-slider example-slider">
       <div className="fnc-slider__slides">
         {/* Slide Components */}
-        <NetworkSlide
+        <CablingWiringSlide
           blendClass="m--blend-green m--active-slide"
-          headingLines={["Network"]}
-          dataCreditType="network"
+          headingLines={["Electrical", "Wiring"]}
+          dataCreditType="electrical_wiring"
         />
-        <NetworkSlide
+        <CablingWiringSlide
           blendClass="m--blend-dark"
-          headingLines={["Business", "Laws"]}
-          dataCreditType="business_laws"
+          headingLines={["Fire", "Networks"]}
+          dataCreditType="fire_networks"
         />
-        <NetworkSlide
+        <CablingWiringSlide
           blendClass="m--blend-red"
-          headingLines={["Client", "Server"]}
-          dataCreditType="client_server"
+          headingLines={["Security", "Networks"]}
+          dataCreditType="security_networks"
         />
         {/* End of Slide Components */}
       </div>
@@ -33,15 +33,15 @@ const NetworkSlider = () => {
         </div>
         <div className="fnc-nav__controls">
           <button className="fnc-nav__control">
-            Network
+            Electrical Wiring
             <span className="fnc-nav__control-progress"></span>
           </button>
           <button className="fnc-nav__control">
-            Business Laws
+            Fire Networks
             <span className="fnc-nav__control-progress"></span>
           </button>
           <button className="fnc-nav__control">
-            Client Server
+            Security Networks
             <span className="fnc-nav__control-progress"></span>
           </button>
         </div>

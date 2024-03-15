@@ -16,8 +16,8 @@ const FooterSection = () => {
 
       <ul className="links">
         <FooterLink label="Home" href="#" className="home_scroll"/>
-        <FooterLink label="About" href="#" />
-        <FooterLink label="Blog" href="#" />
+        {/* <FooterLink label="About" href="#" />
+        <FooterLink label="Blog" href="#" /> */}
         <FooterLink label="Contact" href="#" className="footer_scroll" />
       </ul>
 

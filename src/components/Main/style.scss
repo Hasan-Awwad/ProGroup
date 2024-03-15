@@ -307,6 +307,7 @@ body .options {
   height: 400px;
   margin-left: 16%;
   margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 @media screen and (max-width: 718px) {
@@ -405,9 +406,10 @@ body .options .option.active {
   margin: 1%;
   border-radius: 40px;
   background-size: auto 100%;
-  &:active {
-     transform:scale(5);
-  }
+  // &:active {
+    //  transform:scale(5);
+  // }
+  pointer-events: none;
 }
 
 body .options .option.active .label .icon {
@@ -501,4 +503,16 @@ body .options .option .label .info .main {
 
 body .options .option .label .info .sub {
   transition-delay: 0.1s;
+}
+
+.main-more-info {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+  pointer-events: all;
+  margin-left: 5px;
+}
+
+.main-more-info:hover {
+  color: #b5abab;
 }

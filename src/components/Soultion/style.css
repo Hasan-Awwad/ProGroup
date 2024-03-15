@@ -1,0 +1,27 @@
+.solutions {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.solutions p {
+    margin-bottom: 0.8em;
+    color: black !important;
+}
+
+.solutions h3 {
+    color: black !important;
+}
+
+.solutions .bg-white {
+    background-color: #aba6a6 !important;
+}
+
+body.light .solutions .bg-white {
+    background-color: #89cff0 !important;
+}
+
+body.light .solutions p,
+body.light .solutions h3 {
+    color: white !important;
+}

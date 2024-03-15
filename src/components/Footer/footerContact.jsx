@@ -12,8 +12,7 @@ const FooterContact = () => {
             <div className="add-content">
               <h5>Address</h5>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut veniam
+                Baabda - Mount Lebanon
               </p>
             </div>
           </div>
@@ -26,7 +25,7 @@ const FooterContact = () => {
             <div className="add-content">
               <h5>Phone</h5>
               <p>
-                <span>Mobile: </span> +(961) 030000000
+                <span>Mobile: </span> +(961) 3 418 485
               </p>
             </div>
           </div>
@@ -46,11 +45,11 @@ const FooterContact = () => {
               <h5>Email</h5>
               <p>
                 <a
-                  href="mailto:collab@codewithfaraz.com"
+                  href="mailto:h.awwad@progrouplb.com"
                   style={{ textDecoration: "none" }}
                   class="hover-target"
                 >
-                  info@progrouplb.com
+                  h.awwad@progrouplb.com
                 </a>
               </p>
             </div>

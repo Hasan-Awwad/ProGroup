@@ -26,8 +26,8 @@
   and then simply add classes like .m--blend-$colorName to .fnc-slide 
   to apply specific color for mask blend mode */
   $bgColors: (
-    dark: lighten(#5d2800, 10%),
-    green: lighten(#2D7791, 10%),
+    dark: lighten(#ff4645, 10%),
+    green: lighten(#232833, 10%),
     red: lighten(#113045, 5%),
   );
 
@@ -195,19 +195,19 @@
       color: #fff;
       word-spacing: 10px;
 
-      @media(max-width: 820px) {
+      @media(max-width: 950px) {
         font-size: 300%;
       }
 
-      @media(max-width: 680px) {
+      @media(max-width: 820px) {
         font-size: 250%;
       }
 
-      @media(max-width: 600px) {
+      @media(max-width: 680px) {
         font-size: 200%;
       }
 
-      @media(max-width: 500px) {
+      @media(max-width: 600px) {
         font-size: 150%;
       }
 
@@ -515,7 +515,7 @@ body {
 
     &-heading {
       text-transform: uppercase;
-      font-size: 32px;
+      font-size: 25px;
       margin-bottom: 20px;
       text-align: center;
 
@@ -570,7 +570,7 @@ body.light .demo-cont {
 
       .fnc-slide__inner,
       .fnc-slide__mask-inner {
-        background-image: url('../../../public/assets/images/network.jpg');
+        background-image: url('../../../public/assets/images/electrical_wiring.jpg');
       }
     }
 
@@ -578,7 +578,7 @@ body.light .demo-cont {
 
       .fnc-slide__inner,
       .fnc-slide__mask-inner {
-        background-image: url('../../../public/assets/images/business_laws.jpg');
+        background-image: url('../../../public/assets/images/fire_network.jpg');
       }
     }
 
@@ -586,7 +586,7 @@ body.light .demo-cont {
 
       .fnc-slide__inner,
       .fnc-slide__mask-inner {
-        background-image: url('../../../public/assets/images/clients_server.jpg');
+        background-image: url('../../../public/assets/images/security_network.png');
       }
 
       .fnc-slide__inner:before {

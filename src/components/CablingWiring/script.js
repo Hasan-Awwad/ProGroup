@@ -191,19 +191,19 @@ script.onload = function () {
           $demoCont.classList.toggle("credits-active");
           var creditType = this.getAttribute("data-credit-type");
           var descriptionTitle, description;
-          if (creditType === "network") {
+          if (creditType === "electrical_wiring") {
             description =
-              "Is the practice of connecting computers and other devices together to share resources and information. It involves the design, implementation, and management of networks, including wired and wireless networks, to enable communication and collaboration among users and systems.";
-            descriptionTitle = "Network";
+              "Is the process of connecting electrical components and devices to create a functional electrical system. It involves designing, installing, and managing the connections that allow electricity to flow safely and efficiently. This includes wiring for power distribution, lighting, appliances, and other electrical fixtures, ensuring reliable and safe operation of electrical equipment and systems.";
+            descriptionTitle = "Electrical Wiring";
           } else {
-            if (creditType === "business_laws") {
+            if (creditType === "fire_networks") {
               description =
-                "Are the legal rules governing commercial activities. They cover contracts, corporate governance, intellectual property, employment practices, and consumer protection. These laws aim to ensure fair competition, protect rights, and maintain market stability. Understanding and adhering to them are crucial for businesses to operate ethically and successfully.";
-              descriptionTitle = "Business Laws";
+                "It involve the design, installation, and management of systems aimed at preventing and combating fires within buildings and facilities. This includes the layout and connection of fire alarms, smoke detectors, sprinkler systems, fire extinguishers, and other fire suppression devices. Fire networks are crucial for early detection of fires and prompt response to protect lives and property.";
+              descriptionTitle = "Fire Networks";
             } else {
               description =
-                "Is a computing model where client devices request services or resources from centralized servers. Clients initiate communication and make requests, while servers process and fulfill those requests. This architecture enables efficient distribution of tasks, centralized data management, and scalability in networked applications.";
-              descriptionTitle = "Clinet Servers";
+                "It encompass the design, deployment, and maintenance of systems aimed at safeguarding assets, information, and people within a given environment. This includes the integration of surveillance cameras, access control systems, alarm systems, and other security devices to monitor and protect against unauthorized access, theft, vandalism, and other security threats. Security networks are essential for maintaining a safe and secure environment for individuals and businesses.";
+              descriptionTitle = "Security Networks";
             }
           }
           document.querySelector(".demo-cont__credits-heading").textContent = descriptionTitle;
