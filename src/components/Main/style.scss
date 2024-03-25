@@ -305,14 +305,47 @@ body .options {
   max-width: 900px;
   width: calc(100% - 100px);
   height: 400px;
-  margin-left: 16%;
+  margin-left: 10%;
   margin-bottom: 5%;
   margin-top: 5%;
 }
 
-@media screen and (max-width: 718px) {
+@media screen and (max-width: 992px) {
+  body .options {
+    margin-left: 5%;
+  }
+  body .options .option .label .info .main {
+    font-size: 1rem !important;
+  }
+  body .options .option .label .info .sub {
+    font-size: 0.6rem !important;
+  }
+}
+
+@media screen and (max-width: 750px) {
   body .options {
     min-width: 520px;
+  }
+
+  body .options .option .label .info .main {
+    font-size: 0.8rem !important;
+  }
+  body .options .option .label .info .sub {
+    font-size: 0.5rem !important;
+  }
+  body .options .option.active .label {
+    left: 5px !important;
+  }
+  body .options .option .label .icon {
+    min-width: 30px !important;
+    max-width: 30px !important;
+    height: 30px !important;
+  }
+  body .options .option.active .label .icon {
+    padding-left: 2.5% !important;
+  }
+  body .options .option .label .icon {
+    padding-left: 15% !important;
   }
 
   // body .options .option:nth-child(5) {
@@ -320,9 +353,22 @@ body .options {
   // }
 }
 
+@media screen and (max-width: 500px) {
+  body .options {
+    flex-direction: column !important;
+    flex-wrap: inherit;
+  }
+}
+
 @media screen and (max-width: 638px) {
   body .options {
     min-width: 440px;
+  }
+  body .options .option{
+    background-size: auto 400% !important;
+  }
+  body .options .option .label .info {
+    font-weight: 900 !important;
   }
 
   body .options .option {
