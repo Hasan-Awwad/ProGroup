@@ -7,7 +7,7 @@ script.onload = function () {
     $(document).ready(function () {
         const $cont = $('.cont');
         const $slider = $('.slider');
-        const $nav = $('.nav');
+        const $nav = $('.nav2');
         const winW = $(window).width();
         const animSpd = 750; // Change also in CSS
         const distOfLetGo = winW * 0.2;
@@ -17,16 +17,17 @@ script.onload = function () {
         let diff = 0;
 
         // Generating slides
-        let arrCities = ['Amsterdam', 'Rome', 'New—York', 'Singapore', 'Prague']; // Change number of slides in CSS also
+        let arrCities = ["Desktop Application", "Mobile Application", "Web Application"]; // Change number of slides in CSS also
         let numOfCities = arrCities.length;
         let arrCitiesDivided = [];
-
+        let arrCitiesFirstWord = [];
         arrCities.map(city => {
             let length = city.length;
             let letters = Math.floor(length / 4);
             let exp = new RegExp(".{1," + letters + "}", "g");
-
+            
             arrCitiesDivided.push(city.match(exp));
+            arrCitiesFirstWord.push(city.split(" "));
         });
 
         let generateSlide = function (city) {
@@ -34,7 +35,7 @@ script.onload = function () {
             let frag2 = $(document.createDocumentFragment());
             const numSlide = arrCities.indexOf(arrCities[city]) + 1;
             const firstLetter = arrCitiesDivided[city][0].charAt(0);
-
+            
             const $slide =
                 $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
                               <div class="slide__darkbg slide--${numSlide}__darkbg"></div>
@@ -42,17 +43,24 @@ script.onload = function () {
                           </div>`);
 
             const letter =
-                $(`<div class="slide__letter slide--${numSlide}__letter">
-                              ${firstLetter}
-                          </div>`);
+                $(`<div class="slide__letter slide--${numSlide}__letter"><span>
+                              ${arrCitiesFirstWord[city][0]}
+                          </span></div>`);
 
-            for (let i = 0, length = arrCitiesDivided[city].length; i < length; i++) {
-                const text =
-                    $(`<div class="slide__text slide__text--${i + 1}">
-                                  ${arrCitiesDivided[city][i]}
+            // for (let i = 0, length = arrCitiesDivided[city].length; i < length; i++) {
+            //     const text =
+            //         $(`<div class="slide__text slide__text--${i + 1}">
+            //                       ${arrCitiesDivided[city][i]}
+            //                   </div>`);
+
+            //     frag1.append(text);
+            // }
+            const text =
+                $(`<div class="slide__text slide__text--1">
+                                  ${arrCitiesFirstWord[city][1]}
                               </div>`);
-                frag1.append(text);
-            }
+
+            frag1.append(text);
 
             const navSlide = $(`<li data-target="${numSlide}" class="nav__slide nav__slide--${numSlide}"></li>`);
             frag2.append(navSlide);
@@ -224,20 +232,20 @@ script.onload = function () {
         var mostRight = 0;
         function autoScrollCont() {
             if (!animation) {
-                if(mostRight==0){
+                if (mostRight == 0) {
                     navigateRight();
                 } else {
                     navigateLeft();
                 }
-                if (curSlide==numOfCities){
-                    mostRight =1;
+                if (curSlide == numOfCities) {
+                    mostRight = 1;
                 }
-                if(curSlide==1){
-                    mostRight=0;
+                if (curSlide == 1) {
+                    mostRight = 0;
                 }
             }
         }
-    
+
         setInterval(autoScrollCont, 3000);
 
     });

@@ -19,14 +19,16 @@ function Main() {
         "./assets/images/network-main.webp",
       icon: "fa-solid fa-diagram-project",
       main: "Network",
+      classNameToRedirect: "content",
       sub: "Seamless Connectivity Solutions",
     },
     {
       background:
-        "https://66.media.tumblr.com/5af3f8303456e376ceda1517553ba786/tumblr_o4986gakjh1qho82wo1_1280.jpg",
-      icon: "fa-tree",
-      main: "Hardware",
-      sub: "Omuke trughte a otufta",
+        "./assets/images/post-images-consulting-firms.jpeg",
+      icon: "fa-solid fa-people-arrows",
+      main: "Consultancy",
+      sub: "Years of expertise at your service",
+      classNameToRedirect: "blog-slider",
     },
     {
       background:
